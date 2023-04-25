@@ -1,3 +1,0 @@
-include ':app'
-rootProject.name = "selfie2anime"
-include ':openCVLibrary343'
