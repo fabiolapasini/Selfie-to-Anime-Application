@@ -18,13 +18,18 @@ I trained a Cycle Gan PyTorch model on the Kaggle selfie2anime dataset
 
 to start the train of the model download the project and the dataset and then move inside the folder of the project and type:
 
-_python train.py --dataroot PATH-TO-THE-DATASET --name selfie2anime --model cycle_gan_
+_python train.py --dataroot <PATH-TO-THE-DATASET> --name selfie2anime --model cycle_gan_
 
 Once the train is finished, get the last saved model from the checkpoints and oprtimize it to be used on android. Since Gan models are usually composed of both a generator part and a discriminator part but the purpose of this model was to create and generate a new image, I just needed the generator part. To run the optimization script type:
 
-_python trace_model.py --name selfie2anime --model cycle_gan --dataroot PATH-TO-THE-DATASET_
+_python trace_model.py --name selfie2anime --model cycle_gan --dataroot <PATH-TO-THE-DATASET>_
 
 # Android Application
+
+First of all, we will need to download theA ndroid version of OpenCV libraryfrom here [OpencCV for Android](https://sourceforge.net/projects/opencvlibrary/files/opencv-android/3.4.3/opencv-3.4.3-android-sdk.zip/download) 
+Then, in order to use OpenCV on our phone, we need to install OpenCV Manager, to do that move inside the adb folder in _C:\Users\[USER-NAME]\AppData\Local\Android\sdk\platform-tools_ and type 
+
+_adb install <path-to-OpenCV-sdk>/apk/OpenCV_<version>_Manager_<app_version>_<platform>.apk_ and select a version. For me _adb install OpenCV\apk\OpenCV_3.4.3_Manager_3.43_arm64-v8a.apk_ worked.
 
 ## Dependencies
 
