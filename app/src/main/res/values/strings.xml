@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">selfie2anime</string>
+    <string name="open_gallery">Apri Galleria</string>
+    <string name="use_camera">Apri Camera</string>
+    <string name="salvare">Salvare Risultato</string>
+</resources>
