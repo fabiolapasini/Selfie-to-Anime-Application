@@ -29,7 +29,9 @@ _python trace_model.py --name selfie2anime --model cycle_gan --dataroot <PATH-TO
 First of all, we will need to download theA ndroid version of OpenCV libraryfrom here [OpencCV for Android](https://sourceforge.net/projects/opencvlibrary/files/opencv-android/3.4.3/opencv-3.4.3-android-sdk.zip/download) 
 Then, in order to use OpenCV on our phone, we need to install OpenCV Manager, to do that move inside the adb folder in _C:\Users\[USER-NAME]\AppData\Local\Android\sdk\platform-tools_ and type 
 
-_adb install <path-to-OpenCV-sdk>/apk/OpenCV_<version>_Manager_<app_version>_<platform>.apk_ and select a version. For me _adb install OpenCV\apk\OpenCV_3.4.3_Manager_3.43_arm64-v8a.apk_ worked.
+--> _adb install <path-to-OpenCV-sdk>/apk/OpenCV_<version>_Manager_<app_version>_<platform>.apk_ and select a version. 
+
+For me _adb install OpenCV\apk\OpenCV_3.4.3_Manager_3.43_arm64-v8a.apk_ worked.
 
 ## Dependencies
 
