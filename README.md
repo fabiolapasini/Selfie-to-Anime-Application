@@ -7,6 +7,12 @@ The purpose of this project was to develop an android application that was able 
 
 An AI model was first trained on a computer using the GPU and then the inference was performed on the mobile application.
 
+# Examples 
+
+<p align="center">
+    <img src="img/example.png" alt="Image 1" width="700" style="vertical-align:middle;">
+</p>
+
 # Development
 
 ## AI model
